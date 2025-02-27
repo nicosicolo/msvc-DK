@@ -10,9 +10,11 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
+
 @Service
 public class UsuarioServiceImpl implements IUsuarioService{
     //Inyectamos el repository
+    //Ya no se recomienda realizar inyecccion de dependencias utilizando la anotacion Autowired; es aconsejable utilizar un metodo constructor.
     @Autowired
     private UsuarioRepository repository;
 
